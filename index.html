@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>HTML primeros pasos</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="palabra, clave, carros, alquiler, venta, SOAT">
+	<meta name="description" content="Contenido de descripción par identificar lo que contiene la página web">
+	<meta name="author" content="Santiago Agudelo, Ingeniero Multimedia">
+</head>
+<body bgcolor=#BBB>
+	<!--comentario en HTML-->
+
+	<!--Titulos en HTML (h1-h6) de más imnportante a menos importante-->
+	<h1>...Mayor relevancia y número mínimo</h1>
+	<h2>...</h2>
+	<h3>...</h3>
+	<h4>...</h4>
+	<h5>...</h5>
+	<h6>...Menor relevancia y número máximo</h6>
+
+	<!--Etiquetas para textos en HTML-->
+	<p>La etiqueta <<p>> dará un salto de línea, ya que proviene de la palabra párrafo, contiene el texto que sea</p>
+	<span>esta etiqueta contiene texto, pero no es tan relevante como "p", se usa por ejmplo para las notificaciones de facebook, el numerito de las notificaciones</span>
+
+	<!--Seleccionar o agrupar contenido anidado en HTML-->
+	<div> <!--anida o agrupa contenido-->
+		<h1>este es el título de mi div</h1>
+		<p>la etiqueta div da una separación de contenidos, puede contener texto, imagene, tablas y agrupar contenidos</p>
+	</div>
+	<section> <!--Al igual que el div, el section agrupa contenidos pero es más relevante en la página-->
+		<h2>este es el título de mi section</h2>
+		<p>la etiqueta section da una separación de contenidos, puede contener texto, imagene, tablas y agrupar contenidos, ejemplo: sección de noticias en Facebook</p>
+	</section>
+	<article> <!--...hace buena pareja con el section, mas no es fundamental-->
+		<h2>este es el título de mi article</h2>
+		<p>Ejemplo, la noticia individual de cada uno de nuestros amigos</p>
+	</article>
+	<aside>
+		<h3>Soy aside, la eiqueta menos relevante</h3>
+		<p>Aside se utiliza para contenidos que no son relevantes en la página WEB o por lo menos no son el enfoque d esta, por ejmplo: publicidad.</p>
+	</aside>
+
+	<!--listas ordenadas y desordenadas-->
+	<ol>
+		<li>Limón</li>
+		<li>Avichuela</li>
+		<li>Calabaza</li>
+	</ol>
+	<ul>
+		<li>Limón</li>
+		<li>Avichuela</li>
+		<li>Calabaza</li>
+	</ul>	
+
+	<img height="250px" src="https://i.ytimg.com/vi/NfM8jBPVkFM/maxresdefault.jpg">
+
+	<!--Enlaces-->
+	<br><a href="https://es.wikipedia.org/wiki/Chamaeleonidae">Chama</a>
+
+	<!--Formularios-->
+	<br><br><form action="index.html" method="get"> 
+		<label for="name">Name: </label><input type="text" name="name" placeholder="Jack Simon" autofocus>
+		<br><label for="name">Password: </label><input type="password" name="password" placeholder="12345678">
+		<br><label name="hood" placeholder="my hood is...">Describe your neighborhood: </label><textarea></textarea>
+		<br><input type="submit" Value="sign in">
+	</form>
+
+	<!--Etiquetas importantes: header, nav y footer-->
+	<header> <!--Puede contener lo que sea, siempre y cuando ayude a la navegación de la página-->
+		<p>-Puede contener lo que sea, siempre y cuando ayude a la navegación de la página-</p>
+	</header>
+	<nav> <!--se usan listas para determinar los diferentes sitios de la página-->
+		<ul>
+			<li><a href="">Home</a></li>
+			<li><a href="">Profile</a></li>
+			<li><a href="">Contact</a></li>
+		</ul>
+	</nav>
+	<footer> <!--aquí se guardan los derechos de autor de la paǵina, avisos legales, bla bla bla-->
+		<p>-aquí se guardan los derechos de autor de la paǵina, avisos legales, bla bla bla-</p>
+	</footer>
+</body>
+</html>

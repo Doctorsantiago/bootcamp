@@ -1,0 +1,59 @@
+*{
+			padding: 0;
+			margin: 0;
+		}
+
+		body{
+			font-family: bebas neue;
+			font-size: 20px;
+		}
+
+		.icon{
+			height: 30px;
+		}
+
+		header{
+			width: 100%;
+			background-color: rgba(240, 240, 240, 0.85);
+			position: absolute;
+			text-align: center;
+			padding: 0.2%;
+		}
+		#menu{
+			margin: 0 auto;
+		}
+		#menu ul{
+			list-style: none;
+		}
+		#menu ul li{
+			display: inline-block;
+			margin-right: 0.5%;
+			margin-left: 0.5%;
+			vertical-align: middle;
+		}
+		#menu ul li a{
+			text-decoration: none;
+			color: #222;
+
+		}
+
+
+
+		#home h1, h3{
+			font-family: engel light ltd;
+		}
+
+		#home{
+			background-image: url(../Images/Home.jpg);
+			background-size: 100%;
+			color: #fff;
+		}
+
+		.content {
+			padding: 180px;
+		}
+
+		.button{
+			background-color: #ea4;
+			border-radius: 5px;
+		}

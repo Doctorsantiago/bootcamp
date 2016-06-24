@@ -1,0 +1,36 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.oneoftwo{
+	background-color: red;
+	width: 48%;
+	padding: 0.5%;
+	margin: 0 auto;
+	display: inline-block;
+}
+.oneoftwo input{
+	width: 100%;
+	margin: 1%;
+}
+
+body{
+	font-family: verdana, sans-serif;
+}
+
+form{
+	width: 90%;
+	margin: 0 auto;
+}
+
+fieldset{
+	padding: 0.5%;
+}
+
+label{
+}
+
+input{
+}
+

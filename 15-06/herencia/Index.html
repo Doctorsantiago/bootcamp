@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+	
+<html lang="es">
+	
+<head>
+	<title>Positions</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="Santiago Agudelo, Ingeniero Multimedia">
+
+	<style type="text/css">
+		html{
+			font: 75% verdana, sans-serif;
+		}
+		h2{color: #062; font-weight: bold; font-size: 24px;}
+		.static{
+			position: static;
+		}
+		.relative{
+			position: relative;
+			top: 180px;
+			left: 20px;
+			background-color: gray;
+			width: 500px;
+		}
+		.fixed{
+			position: fixed;
+			bottom: 0;
+			right: 0;
+			width: 200px;
+			background-color: yellow;
+		}
+		.absolute{
+			position: absolute;
+			top: 80px;
+			right: 0;
+			width: 150px;
+			height: 80px;
+			background-color: cyan;
+		}
+		p{
+			color: cyan;
+		}
+		#special{
+			background-color: red;
+			color: yellow;
+		}
+	</style>
+</head>
+
+<body> 
+	<h2>HERITAGE AND POSITIONS</h2>
+	<div class="static">
+		<p>Estático</p>
+	</div>
+	<div class="relative">
+		<p>Relativo</p>
+	</div>
+	<div class="fixed">
+		<p id="special">Fijo</p>
+	</div>
+	<div class="absolute">
+		<p>Absoluto</p>
+	</div>
+
+</body>
+
+</html>
+	

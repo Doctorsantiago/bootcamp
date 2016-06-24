@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+	
+<html lang="es">
+	
+<head>
+	<title>Form</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="Santiago Agudelo, Ingeniero Multimedia">
+
+	<link rel="stylesheet" type="text/css" href="style/Style.css">
+</head>
+
+<body>
+	
+	<form>
+		<fieldset>
+		<legend>Datos personales</legend>
+		<div class="oneoftwo">
+			<label for="name">Nombres: </label><br>
+			<input type="textbox" name="name" placeholder="Pedro">	
+		</div>
+		<div class="oneoftwo">
+			<label for="lastname">Apellidos: </label><br>
+			<input type="textbox" name="lastname" placeholder="López Sánchez">
+		</div>
+		
+
+		<label for="id">Identificación: </label>
+		<input type="text" list="idtype" name="id-type" placeholder="Tipo de identificación">
+			<datalist id="idtype">
+				<option value="Tarjeta de Identidad"></option>
+				<option value="Cédula de Ciudadanía"></option>
+				<option value="Cédula de Extranjería"></option>
+			</datalist>
+		<label for="idnum">N°: </label>
+		<input type="textbox" name="idnum" placeholder="1234567890"><br>
+		<label for="born-date">Fecha de nacimiento: </label>
+		<input list="day" type="text" name="born-date-day" placeholder="día">
+			<datalist id="day">
+				<option value="1"></option>
+				<option value="2"></option>
+				<option value="3"></option>
+				<option value="4"></option>
+				<option value="5"></option>
+				<option value="6"></option>
+				<option value="7"></option>
+				<option value="8"></option>
+				<option value="9"></option>
+				<option value="10"></option>
+				<option value="11"></option>
+				<option value="12"></option>
+				<option value="13"></option>
+				<option value="14"></option>
+				<option value="15"></option>
+				<option value="16"></option>
+				<option value="17"></option>
+				<option value="18"></option>
+				<option value="19"></option>
+				<option value="20"></option>
+				<option value="21"></option>
+				<option value="22"></option>
+				<option value="23"></option>
+				<option value="24"></option>
+				<option value="25"></option>
+				<option value="26"></option>
+				<option value="27"></option>
+				<option value="28"></option>
+				<option value="29"></option>
+				<option value="30"></option>
+				<option value="31"></option>
+			</datalist>
+
+			<input list="month" type="text" name="born-date-month" placeholder="mes">
+			<datalist id="month">
+				<option value="Enero"></option>
+				<option value="Febrero"></option>
+				<option value="Marzo"></option>
+				<option value="Abril"></option>
+				<option value="Mayo"></option>
+				<option value="Junio"></option>
+				<option value="Julio"></option>
+				<option value="Agosto"></option>
+				<option value="Septiembre"></option>
+				<option value="Octubre"></option>
+				<option value="Noviembre"></option>
+				<option value="Diciembre"></option>
+			</datalist>
+
+			<input list="year" type="text" name="born-date-year" placeholder="año">
+			<datalist id="year">
+				<option value="1990"></option>
+				<option value="1991"></option>
+				<option value="1992"></option>
+				<option value="1993"></option>
+				<option value="1994"></option>
+				<option value="1995"></option>
+				<option value="1996"></option>
+				<option value="1997"></option>
+				<option value="1998"></option>
+				<option value="1999"></option>
+			</datalist>
+
+			<fieldset>
+				<legend>Género</legend>
+				<input type="radio" name="male" value="male"> <label>Masculino</label>
+				<input type="radio" name="male" value="Female"> <label>Femenino</label>
+			</fieldset><br>
+
+			<label for="myrelationship">Estado civil: </label>
+			<input list="relationship" type="text" name="myrelationship" value="Casado(a)">
+			<datalist id="relationship">
+				<option value="Soltero(a)"></option>
+				<option value="Casado(a)"></option>
+				<option value="Viudo(a)"></option>
+				<option value="Unión libre"></option>
+			</datalist><br>
+
+			<label for="telnum">Telefono 1: </label>
+			<input list="postal" 	type="text" name="postalcode">
+			<datalist id="postal">
+				<option value="+50">CAL</option>
+				<option value="+51">CEL</option>
+				<option value="+52">CIL</option>
+				<option value="+53">CUL</option>
+				<option value="+54">CAL</option>
+				<option value="+55">CAL</option>
+				<option value="+56">CAL</option>
+				<option value="+57">C0L</option>
+				<option value="+58">CAL</option>
+				<option value="+59">CAL</option>
+			</datalist>
+			<input type="textbox" name="telnum1"><br>
+
+			<label for="telnum">Telefono 2: </label>
+			<input list="postal2" 	type="text" name="postalcode">
+			<datalist id="postal2">
+				<option value="+50">CAL</option>
+				<option value="+51">CEL</option>
+				<option value="+52">CIL</option>
+				<option value="+53">CUL</option>
+				<option value="+54">CAL</option>
+				<option value="+55">CAL</option>
+				<option value="+56">CAL</option>
+				<option value="+57">C0L</option>
+				<option value="+58">CAL</option>
+				<option value="+59">CAL</option>
+			</datalist>
+			<input type="textbox" name="telnum2"><br>	
+
+			<label >País: </label>
+			<input type="text" list="countries" name="country">
+			<datalist id="countries">
+				<option class="Afganistán"></option>
+				<option class="Alemania"></option>
+				<option class="Colombia"></option>
+			</datalist><br>
+
+			<label >Departamento: </label>
+			<input type="text" list="states" name="state">
+			<datalist id="states">
+				<option class="Amazonas"></option>
+				<option class="Antioquia"></option>
+				<option class="Bolivar"></option>
+			</datalist><br>
+
+			<label >Ciudad: </label>
+			<input type="text" list="cities" name="country">
+			<datalist id="cities">
+				<option class="Leticia"></option>
+				<option class="Manizales"></option>
+				<option class="Medellin"></option>
+			</datalist><br>
+			
+			<label for="address"></label>
+			<input type="textbox" name="address"><br>
+
+			<fieldset>
+				<legend>Licencia de conducción</legend>
+				<input type="radio" name="licence" value="A1"> <label>A1</label>
+				<input type="radio" name="licence" value="A2"> <label>A2</label>
+				<input type="radio" name="licence" value="B1"> <label>B1</label>
+				<input type="radio" name="licence" value="B2"> <label>B2</label>
+				<input type="radio" name="licence" value="B3"> <label>B3</label>
+				<input type="radio" name="licence" value="C1"> <label>C1</label>
+				<input type="radio" name="licence" value="C2"> <label>C2</label>
+				<input type="radio" name="licence" value="C3"> <label>C3</label>
+				<input type="radio" name="licence" value="nolicense"> <label>No tengo</label>
+			</fieldset>
+
+			<label>Dispone de vehículo propio</label>
+			<input type="radio" name="car" value="caryes">Sí
+			<input type="radio" name="car" value="carno">No
+
+			<input type="file" name="profile-picture">
+
+			<fieldset>
+				<legend>Perfil profesional</legend>
+				<label for="grade-title">Título: </label>
+				<input type="textbox" name="grade-title"><br>
+
+				<label>Descripción del perfil: </label>
+				<textarea></textarea>
+			</fieldset>
+
+			<input type="reset" name="reset">
+	</fieldset>
+	</form>
+
+
+</body>
+
+</html>
+	

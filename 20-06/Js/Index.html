@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+	<title>Javascript one</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="Santiago Agudelo, Ingeniero Multimedia">
+
+</head>
+
+<body>
+	<script type="text/javascript">
+		/*var x = 7%3;
+		var y = 27/3;
+
+		console.log("x: " + x + " y: " + y);
+		
+		x += y;
+
+		alert("x: " + x + " y: " + y);
+
+		document.write(x);*/
+
+		/*var n = Math.ceil(Math.random()*10);
+		for (var i = 0; i < 5; i++) {
+			var num = prompt("introduzca un valor: ", "");
+			if (num == n) {
+				document.write("Adivinaste!");
+				break;
+			}
+			else{
+				document.write("Sigue intentando<br>");
+			}
+			if (i==4) {
+				document.write("Perdiste! en número era: " + n);
+				 break;
+			}
+		}*/
+
+		/*var name = prompt("introduzca el nombre del estudiante:", "");
+		var nota1 = parseFloat(prompt("introduzca la primera nota:", ""));
+		var nota2 = parseFloat(prompt("introduzca la segunda nota:", ""));
+		var nota3 = parseFloat(prompt("introduzca la tercera nota:", ""));
+
+		document.write("<table>"+
+			"<caption>Notas</caption>"+
+			"<tr>"+
+			"<th>Nombre</th>"+
+			"<th>Nota1</th>"+
+			"<th>Nota2</th>"+
+			"<th>Nota3</th>"+
+			"<th>Nota acumulada</th>"+
+		"</tr>"+
+		"<tr>"+
+			"<td>" + name + "</td>"+
+			"<td>" + nota1 + "</td>"+
+			"<td>" + nota2 + "</td>"+
+			"<td>" + nota3 + "</td>"+
+			"<td>" + (nota1 + nota2 + nota3)/3 + "</td>"+
+		"</tr>"+
+		"</table>");*/
+
+		var strUser = prompt("Ingrese una palabra:", "");
+		var str = [];
+		var newStr = [];
+		var word = "";
+		var letter;
+		var done = false;
+		var lost = false;
+		var justOne = false;
+		var tries = 0;
+
+		for (var i = 0; i < strUser.length; i++) {
+			str[i] = strUser[i];
+			newStr[i] = "_";
+		}
+
+		alert("Ahora dile a un amigo que adivine");
+
+		while(!done) {
+			justOne = false;
+			document.write("<br>" + newStr);
+			letter = prompt("introduzca una letra:", "");
+			for (var i = 0; i < str.length; i++) {
+				if (letter == str[i]) {
+					newStr[i] = letter;
+					justOne=true;
+				}
+			}
+			if (!justOne) tries++;
+			if (tries >= 6) {
+				lost = true;
+				alert("perdiste! La palabra era: " + str);
+				break;
+			}
+
+			word = "";
+			for (var i = 0; i < str.length; i++) {
+				word += newStr[i];
+			}
+
+			if (strUser == word) {
+				done = true;
+				alert("Ganaste!");
+			}
+
+			console.log(word);
+			console.log(tries);
+			console.log(str.length + "   " + newStr.length);
+		}
+	</script>
+</body>
+
+</html>

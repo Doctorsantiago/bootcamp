@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+	
+<html lang="es">
+	
+<head>
+	<title>JS II</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="Santiago Agudelo, Ingeniero Multimedia">
+</head>
+
+<body>
+
+	<!--<p>Click al bot&oacute;n.</p>
+	<button onclick="Request()">Suma</button>
+	<p id="demo"></p>
+	
+	<a href="https://www.google.com" id="enlace" onmouseover="Cambiar()" onmouseout="Cambiar()">Google</a>-->
+
+	<label for="name">Nombre: </label>
+	<input type="textbox" name="name" id="nameId">
+	<button onclick="GetName()">Insertar</button>
+
+	<script>
+		/*function myFunction() {
+    	var person = prompt("Introduzca nombre: ", "John");
+	    if (person != null) {
+    	    document.getElementById("demo").innerHTML =
+        	"Hola " + person + "! C&oacute;mo est&aacute;s?";
+    	}
+	}
+
+	function Request(){
+		var num1 = parseInt(prompt("Introduzca número 1: ", "0"));
+		var num2 = parseInt(prompt("Introduzca número 2: ", "0"));
+		Suma(num1, num2);
+	}
+
+	function Suma(num1, num2){
+		var result = num1 + num2;
+		document.getElementById("demo").innerHTML = result;}
+
+	function Cambiar(){
+		if (document.getElementById("enlace").style.color != "red"){
+			document.getElementById("enlace").style.color = "red";
+			document.getElementById("enlace").style.textDecoration = "none";
+		}else{
+			document.getElementById("enlace").style.color = "blue";
+			document.getElementById("enlace").style.textDecoration = "underline";
+		}
+	}*/
+
+	function GetName(){
+		var name = document.getElementById("nameId").value;
+		alert(name);
+	}
+
+	</script>
+</body>
+</html>

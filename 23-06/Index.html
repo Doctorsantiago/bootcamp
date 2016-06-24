@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>AngularJS II</title>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="Santiago Agudelo Arango, Estudiante de ingeniería multimedia">
+
+	<link rel="stylesheet" type="text/css" href="style/Style.css">
+
+	<script src="angular.min.js"></script>
+
+</head>
+<body>
+	<!-- EJERCICIO UNO 
+	<div ng-app="myApp" ng-controller="personController">
+		<label>Nombre: <br></label>
+		<input type="text" ng-model="name"><br>
+		<label>Apellido: <br></label>
+		<input type="text" ng-model="lastname">
+		<p>Hola {{name + " " + lastname}}</p>
+	</div>
+
+	<script type="text/javascript">
+		var myApp = angular.module("myApp", []);
+		myApp.controller('personController', function($scope) {
+			$scope.name = "John";
+			$scope.lastname = "Boole";
+		})
+	</script>-->
+
+	<!-- EJERCICIO DOS
+	<div ng-app="myApp" ng-controller="operatorController">
+		<label>Operando 1</label><br>
+		<input type="mumber" ng-model="num1"><br>
+		<label>Operando 2</label><br>
+		<input type="mumber" ng-model="num2"><br>
+		<button ng-click="Sumar()">+</button>
+		<button ng-click="Restar()">-</button>
+		<button ng-click="Multiplicar()">*</button>
+		<button ng-click="Dividir()">/</button>
+		<p>{{total}}</p>
+	</div>
+
+	<script type="text/javascript">
+		var myApp = angular.module("myApp", []);
+		myApp.controller('operatorController',function($scope) {
+			$scope.num1 = 0;
+			$scope.num2 = 0;
+			$scope.total = 0;
+
+			$scope.Sumar = function(){
+				$scope.total = parseInt($scope.num1) + parseInt($scope.num2);
+			}
+			$scope.Restar = function(){
+				$scope.total = parseInt($scope.num1) - parseInt($scope.num2);
+			}
+			$scope.Multiplicar = function(){
+				$scope.total = parseInt($scope.num1) * parseInt($scope.num2);
+			}
+			$scope.Dividir = function(){
+				$scope.total = parseInt($scope.num1) / parseInt($scope.num2);
+			}
+		})
+	</script>-->
+
+	<!--<div ng-app="myApp">
+		<label>Frase:</label>
+		<input type="text" ng-model="text">
+		<p>Reverse: {{ text | reverse }}</p>
+	</div>
+
+	<script type="text/javascript">
+		var myApp = angular.module("myApp",[]);
+		myApp.filter("reverse", function() {
+			newPhrase = [];
+			text1 = "";
+			return function(input) {
+				text1 = input.split("").reverse().join("");
+				for (var i = 0; i < text1.length; i++) {
+					newPhrase[i] = text1[i];
+				}
+				return text1;
+			}
+
+		})
+	</script>-->
+
+	<div ng-app="myApp" ng-controller="tweetController">
+		<label>Tweet:</label><br>
+		<textarea ng-model="tweet" ng-maxlength="114"></textarea>
+		<p>{{max-tweet.lenght}}</p>
+	</div>
+
+	 
+	<script type="text/javascript">
+		var myApp = angular.module("myApp", []);
+		myApp.controller('tweetController',function($scope) {
+			$scope.tweet = "";
+			$scope.resto = 0;
+			$scope.max = 114;
+		})
+	</script>
+
+	<div class="controls"> <textarea rows="4" cols="50" maxlength="1500" data-ng-minLength="1" data-ng model="createprofilefields.description"></textarea> <br /> <!--counter--> <span class="form-help">{{1500-createprofilefields.description.length}} Characters</span> </div> 
+
+</body>
+</html>
